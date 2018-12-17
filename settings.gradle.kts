@@ -8,3 +8,5 @@
  */
 
 rootProject.name = "gradle-study"
+
+include("module-1")

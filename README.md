@@ -57,3 +57,16 @@ clean - Deletes the build directory.
 jar - Assembles a jar archive containing the main classes.
 testClasses - Assembles test classes.
 ```
+
+### 04. Projects(modules)
+* Add a new module
+```sh
+./gradlew projects
+```
+* possible to execute module's task
+```sh
+▶ ./gradlew -q my-task
+Welcome gradle tasks!
+module name: 1
+end of my task
+```

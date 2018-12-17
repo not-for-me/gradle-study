@@ -5,6 +5,8 @@
  * Learn how to create Gradle builds at https://guides.gradle.org/creating-new-gradle-builds/
  */
 
+import org.gradle.api.JavaVersion.*;
+
 // https://docs.gradle.org/5.0/dsl/org.gradle.api.tasks.Exec.html
 val listUp = tasks.create<Exec>("list-up") {
     description = "Execute Test shell command"
@@ -28,4 +30,8 @@ listUp.dependsOn("print-me")
 
 plugins {
     java
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_8
 }

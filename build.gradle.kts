@@ -12,3 +12,10 @@ tasks.create<Exec>("list-up") {
 
     commandLine("ls", "-al")
 }
+
+tasks.create("print-me") {
+    description = "print me"
+    group = "My own group"
+    
+    println("Welcome gradle tasks!")
+}

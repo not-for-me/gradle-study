@@ -25,3 +25,7 @@ val listUp = tasks.create<Exec>("list-up") {
 }
 
 listUp.dependsOn("print-me")
+
+plugins {
+    java
+}

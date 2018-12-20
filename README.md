@@ -58,7 +58,7 @@ jar - Assembles a jar archive containing the main classes.
 testClasses - Assembles test classes.
 ```
 
-### 04. Projects(modules)
+## 04. Projects(modules)
 * Add a new module
 ```sh
 ./gradlew projects
@@ -70,3 +70,8 @@ Welcome gradle tasks!
 module name: 1
 end of my task
 ```
+
+## 05. Dependencies
+* commit: 295323b87cafc4fc3e6e063dbfdf7a6afb3fae9b
+* We need java plugins
+* https://docs.gradle.org/current/userguide/java_plugin.html

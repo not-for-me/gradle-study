@@ -28,10 +28,14 @@ val listUp = tasks.create<Exec>("list-up") {
 
 listUp.dependsOn("print-me")
 
-plugins {
-    java
-}
+subprojects {
+    apply(plugin="java")
 
-java {
-    sourceCompatibility = JavaVersion.VERSION_1_8
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        "implementation"("org.projectlombok:lombok:1.16.12")
+    }
 }
